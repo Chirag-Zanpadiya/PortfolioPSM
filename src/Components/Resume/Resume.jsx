@@ -1,5 +1,5 @@
 import React from "react";
-import passwordimg from "../../assets/resume.png";
+import passwordimg from "../../../public/assets/resume.png";
 import { Link } from "react-router-dom";
 
 function Resume() {

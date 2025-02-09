@@ -1,7 +1,7 @@
 import React from "react";
-import razorpaybg from "../../assets/razorpay_background_img.jpg";
-import passwordimg from "../../assets/password.jpeg";
-import githubavtar from "../../assets/githubavtar.png";
+import razorpaybg from "../../../public/assets/razorpay_background_img.jpg";
+import passwordimg from "../../../public/assets/password.jpeg";
+import githubavtar from "../../../public/assets/githubavtar.png";
 import { Link } from "react-router-dom";
 function Projects() {
   return (

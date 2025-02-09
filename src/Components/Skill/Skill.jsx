@@ -17,7 +17,7 @@ function Skill() {
             <div className=" sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="/src/assets/html.svg"
+                src="../../../public/assets/html.svg"
                 alt=""
               />
             </div>
@@ -26,7 +26,7 @@ function Skill() {
             <div className="sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="/src/assets/css.svg"
+                src="../../../public/assets/css.svg"
                 alt=""
               />
             </div>
@@ -35,7 +35,7 @@ function Skill() {
             <div className="sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="/src/assets/tailwindcss.svg"
+                src="../../../public/assets/tailwindcss.svg"
                 alt=""
               />
             </div>
@@ -44,7 +44,7 @@ function Skill() {
             <div className="sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="/src/assets/javascript.svg"
+                src="../../../public/assets/javascript.svg"
                 alt=""
               />
             </div>
@@ -53,7 +53,7 @@ function Skill() {
             <div className="sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="/src/assets/cpp.svg"
+                src="../../../public/assets/cpp.svg"
                 alt=""
               />
             </div>
@@ -62,7 +62,7 @@ function Skill() {
             <div className="sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="/src/assets/react-hook-form.svg"
+                src="../../../public/assets/react-hook-form.svg"
                 alt=""
               />
             </div>
@@ -71,7 +71,7 @@ function Skill() {
             <div className="sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="/src/assets/git.svg"
+                src="../../../public/assets/git.svg"
                 alt=""
               />
             </div>
@@ -80,7 +80,7 @@ function Skill() {
             <div className="sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="/src/assets/java.svg"
+                src="../../../public/assets/java.svg"
                 alt=""
               />
             </div>
@@ -89,7 +89,7 @@ function Skill() {
             <div className="sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="/src/assets/react.svg"
+                src="../../../public/assets/react.svg"
                 alt=""
               />
             </div>
@@ -98,7 +98,7 @@ function Skill() {
             <div className="sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="/src/assets/vscode.svg"
+                src="../../../public/assets/vscode.svg"
                 alt=""
               />
             </div>

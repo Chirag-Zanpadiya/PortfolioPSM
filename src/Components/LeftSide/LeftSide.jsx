@@ -91,7 +91,7 @@ function LeftSide() {
           {/* Photo */}
           <div className="relative w-48 h-48 rounded-full object-fill mb-4">
             <img
-              src="/src/assets/myphoto.png"
+              src="/assets/myphoto.png"
               alt="my-photo"
               className="rounded-full"
             />
