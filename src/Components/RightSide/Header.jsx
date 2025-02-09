@@ -14,7 +14,7 @@ function Header() {
                 className={({ isActive }) =>
                   `block py-2 font-semibold   pr-4 pl-3 transition-all  ${
                     isActive ? "text-orange-300" : "text-[#A6A6A6]"
-                  }   border-gray-50 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0`
+                  }   border-gray-50  lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0`
                 }
               >
                 About
@@ -28,7 +28,7 @@ function Header() {
                 className={({ isActive }) =>
                   `block py-2 text-[#A6A6A6] pr-4 pl-3 transition-all  ${
                     isActive ? "text-orange-300" : "text-[#A6A6A6]"
-                  }   border-gray-50 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0`
+                  }   border-gray-50  lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0`
                 }
               >
                 Skill
@@ -42,7 +42,7 @@ function Header() {
                 className={({ isActive }) =>
                   `block py-2 text-[#A6A6A6] pr-4 pl-3 transition-all  ${
                     isActive ? "text-orange-300" : "text-[#A6A6A6]"
-                  }   border-gray-50 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0`
+                  }   border-gray-50  lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0`
                 }
               >
                 Projects
@@ -56,7 +56,7 @@ function Header() {
                 className={({ isActive }) =>
                   `block py-2 text-[#A6A6A6] pr-4 pl-3  transition-all  ${
                     isActive ? "text-orange-300" : "text-[#A6A6A6]"
-                  }   border-gray-50 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0`
+                  }   border-gray-50  lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0`
                 }
               >
                 Resume
@@ -70,7 +70,7 @@ function Header() {
                 className={({ isActive }) =>
                   `block py-2 text-[#A6A6A6] pr-4 pl-3 transition-all  ${
                     isActive ? "text-orange-300" : "text-[#A6A6A6]"
-                  }   border-gray-50 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0`
+                  }   border-gray-50  lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0`
                 }
               >
                 Contact
