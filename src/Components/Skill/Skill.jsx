@@ -1,5 +1,14 @@
 import React from "react";
-import html from "../../../public/assets/html.svg"
+import html from "/assets/html.svg"
+import css from "/assets/css.svg"
+import js from "/assets/javascript.svg"
+import tailwincss from "/assets/tailwindcss.svg"
+import cpp from "/assets/cpp.svg"
+import rh from "/assets/react-hook-form.svg"
+import git from "/assets/git.svg"
+import java from "/assets/java.svg"
+import react from "/assets/react.svg"
+import vscode from "/assets/vscode.svg"
 function Skill() {
   return (
     <>
@@ -18,7 +27,7 @@ function Skill() {
               <img
                 className="w-[40px] h-[40px]"
                 src={html}
-                alt=""
+                alt="HTML Photo"
               />
             </div>
 
@@ -26,8 +35,8 @@ function Skill() {
             <div className="sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="../../../public/assets/css.svg"
-                alt=""
+                src={css}
+                alt="CSS Photo"
               />
             </div>
 
@@ -35,8 +44,8 @@ function Skill() {
             <div className="sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="../../../public/assets/tailwindcss.svg"
-                alt=""
+                src={tailwincss}
+                alt="TailWind CSS Photo"
               />
             </div>
 
@@ -44,8 +53,8 @@ function Skill() {
             <div className="sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="../../../public/assets/javascript.svg"
-                alt=""
+                src={js}
+                alt="JS Photo"
               />
             </div>
 
@@ -53,8 +62,8 @@ function Skill() {
             <div className="sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="../../../public/assets/cpp.svg"
-                alt=""
+                src={cpp}
+                alt="C++ Photo"
               />
             </div>
 
@@ -62,8 +71,8 @@ function Skill() {
             <div className="sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="../../../public/assets/react-hook-form.svg"
-                alt=""
+                src={rh}
+                alt=""React-H00k-Form Photo
               />
             </div>
 
@@ -71,8 +80,8 @@ function Skill() {
             <div className="sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="../../../public/assets/git.svg"
-                alt=""
+                src={git}
+                alt="Git Photo"
               />
             </div>
 
@@ -80,17 +89,17 @@ function Skill() {
             <div className="sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="../../../public/assets/java.svg"
-                alt=""
+                src= {java}
+                alt="Java Photo"
               />
             </div>
 
-            {/* java icon */}
+            {/* react icon */}
             <div className="sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="../../../public/assets/react.svg"
-                alt=""
+                src={react}
+                alt="React Photo"
               />
             </div>
 
@@ -98,8 +107,8 @@ function Skill() {
             <div className="sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="../../../public/assets/vscode.svg"
-                alt=""
+                src={vscode}
+                alt="VsCode Photo"
               />
             </div>
           </div>
