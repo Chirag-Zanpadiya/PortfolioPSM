@@ -1,5 +1,5 @@
 import React from "react";
-
+import html from "../../../public/assets/html.svg"
 function Skill() {
   return (
     <>
@@ -17,7 +17,7 @@ function Skill() {
             <div className=" sm:w-[60px] sm:h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] p-4 bg-[#262626] flex justify-center items-center rounded-2xl">
               <img
                 className="w-[40px] h-[40px]"
-                src="../../../public/assets/html.svg"
+                src={html}
                 alt=""
               />
             </div>
