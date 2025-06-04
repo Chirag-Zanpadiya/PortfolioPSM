@@ -1,11 +1,27 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 
+import { toggleTheme } from "../../features/theme/themeSlice";
+
+import { useEffect } from "react";
 function Header() {
+  const dispatch = useDispatch();
+  const mode = useSelector((state) => state.theme.mode);
+
+  useEffect(() => {
+    console.log("current Mode", mode);
+    if (mode === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [mode]);
+
   return (
     <>
-      <header className="relative  rounded-t-xl bg-[#1A1A19]  flex-col">
-        <nav className="  flex  justify-center md:justify-end p-4">
+      <header className="relative  rounded-t-xl bg-[#1A1A19]  flex-col justify-center">
+        <nav className="  flex  justify-center md:justify-between p-4">
           <ul className="flex flex-row font-medium flex-wrap md:space-x-14 lg:mt-0">
             <li>
               <NavLink
@@ -77,6 +93,12 @@ function Header() {
               </NavLink>
             </li>
           </ul>
+          <button
+            onClick={() => dispatch(toggleTheme())}
+            className="px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-black dark:text-white transition-all"
+          >
+            {mode === "light" ? "🌙 Dark" : "☀️ Light"} Mode
+          </button>
         </nav>
 
         <div className="h-[1px] w-full  bg-[#a6a6a635] "></div>

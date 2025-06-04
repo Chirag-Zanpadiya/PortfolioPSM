@@ -16,7 +16,8 @@ import Resume from "./Components/Resume/Resume.jsx";
 import Contact from "./Components/Contact/Contact.jsx";
 import RightSideMain from "./Components/RightSide/RightSideMain.jsx";
 import Combine from "./Components/Combine/Combine.jsx";
-
+import { Provider } from "react-redux";
+import { store } from "./app/store";
 
 const route = createBrowserRouter(
   createRoutesFromElements(
@@ -31,8 +32,10 @@ const route = createBrowserRouter(
 );
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    {/* <App />  */}
-    <RouterProvider router={route} />
-  </StrictMode>
+  <Provider store={store}>
+    <StrictMode>
+      {/* <App />  */}
+      <RouterProvider router={route} />
+    </StrictMode>
+  </Provider>
 );
