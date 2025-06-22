@@ -144,6 +144,7 @@
 import React, { useRef, useState } from "react";
 import { FiCode, FiCpu } from "react-icons/fi";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { Link } from "react-router-dom";
 function About() {
   const ref = useRef(null);
   const mouseX = useMotionValue(0);
@@ -211,8 +212,8 @@ function About() {
         </p>
 
         <div className="flex flex-wrap gap-5 mt-12">
-          <a
-            href="/Projects"
+          <Link
+            to="/Projects"
             className="bg-yellow-400 hover:bg-yellow-500 text-black dark:text-white font-semibold px-7 py-3 rounded-lg
               shadow-lg hover:shadow-yellow-400/40
               flex items-center gap-3
@@ -220,16 +221,16 @@ function About() {
               transform hover:scale-105"
           >
             View My Work <span className="text-xl">→</span>
-          </a>
+          </Link>
 
-          <a
-            href="/contact"
+          <Link
+            to="/Contact"
             className="border border-gray-600 hover:border-yellow-400 text-gray-900 dark:text-white px-7 py-3 rounded-lg font-semibold
               transition-all duration-300 ease-in-out
               hover:scale-105"
           >
             Get In Touch
-          </a>
+          </Link>
         </div>
       </section>
 
