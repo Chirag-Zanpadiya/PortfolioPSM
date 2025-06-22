@@ -212,7 +212,7 @@ function About() {
 
         <div className="flex flex-wrap gap-5 mt-12">
           <a
-            href="/projects"
+            href="/Projects"
             className="bg-yellow-400 hover:bg-yellow-500 text-black dark:text-white font-semibold px-7 py-3 rounded-lg
               shadow-lg hover:shadow-yellow-400/40
               flex items-center gap-3
