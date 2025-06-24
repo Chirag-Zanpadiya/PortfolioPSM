@@ -11,9 +11,9 @@ function Projects() {
       livePreview: "https://auto-bg-one.vercel.app/",
       bgImg: "/assets/autobgone.png",
       tech: {
-        frontend: "React + TailwindCSS",
-        backend: "None",
-        deployment: "Vercel",
+        frontend: "React + TailwindCSS + CSS",
+        backend: "Express.js + Node.js + MongoDB",
+        deployment: "Vercel , Render",
       },
     },
     {
@@ -23,9 +23,9 @@ function Projects() {
       livePreview: "Not Avaiable",
       bgImg: "/assets/blogweb.png",
       tech: {
-        frontend: "React + TailwindCSS",
+        frontend: "React + TailwindCSS + CSS",
         backend: "Node.js + Express + MongoDB",
-        deployment: "Backend: Render, Frontend: Not Available",
+        deployment: "Vercel , Render",
       },
     },
     {
@@ -35,8 +35,8 @@ function Projects() {
       livePreview: "https://psmchiragportfolio.vercel.app/",
       bgImg: "/assets/port.png",
       tech: {
-        frontend: "React + TailwindCSS",
-        backend: "None",
+        frontend: "React + TailwindCSS + CSS",
+        backend: "",
         deployment: "Vercel",
       },
     },
@@ -109,44 +109,50 @@ function Projects() {
 
       {/* Modal */}
       {activeProject && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 px-4">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4">
           <div
-            className="bg-[#1a1a1a] text-white rounded-xl w-full max-w-2xl p-4 sm:p-6 relative shadow-2xl border border-yellow-500 
-                max-h-[90vh] overflow-y-auto custom-scrollbar"
+            className="bg-white dark:bg-[#1a1a1a] text-black dark:text-white rounded-xl w-full max-w-2xl p-4 sm:p-6 
+        relative shadow-2xl border border-yellow-500 max-h-[90vh] overflow-y-auto custom-scrollbar"
           >
+            {/* Close button */}
             <button
               onClick={() => setActiveProject(null)}
-              className="absolute top-3 right-4 text-yellow-400 hover:text-red-500"
+              className="absolute top-3 right-4 text-yellow-500 hover:text-red-500"
             >
               <X size={24} />
             </button>
 
+            {/* Project Image */}
             <img
               src={activeProject.bgImg}
               alt={activeProject.title}
               className="rounded-md mb-4 w-full max-h-60 sm:max-h-64 object-cover"
             />
 
-            <h2 className="text-2xl font-bold text-yellow-400 mb-2">
+            {/* Title & Description */}
+            <h2 className="text-2xl font-bold text-yellow-500 mb-2">
               {activeProject.title}
             </h2>
-            <p className="text-gray-300 mb-4">{activeProject.desc}</p>
+            <p className="text-gray-700 dark:text-gray-300 mb-4">
+              {activeProject.desc}
+            </p>
 
-            {/* Enhanced Tech Stack */}
+            {/* Tech Stack Section */}
             <div className="mb-4">
-              <h4 className="text-yellow-400 font-semibold text-sm">
+              <h4 className="text-yellow-500 font-semibold text-sm">
                 Tech Stack:
               </h4>
 
               {/* Frontend */}
-              <div className="mt-2 text-sm text-white">
+              <div className="mt-2 text-sm">
                 <p className="font-semibold">Frontend:</p>
                 <div className="flex flex-wrap gap-2 mt-1">
                   {activeProject.tech.frontend.split(" + ").map((item, idx) => (
                     <span
                       key={idx}
-                      className="px-3 py-1 rounded-full text-sm bg-neutral-800 border border-yellow-400 text-yellow-300 
-                hover:bg-yellow-400 hover:text-black transition-transform transform hover:scale-105"
+                      className="px-3 py-1 rounded-full text-sm bg-gray-100 dark:bg-neutral-800 
+                  border border-yellow-500 text-yellow-600 dark:text-yellow-300 
+                  hover:bg-yellow-400 hover:text-black transition-transform transform hover:scale-105"
                     >
                       {item}
                     </span>
@@ -155,27 +161,28 @@ function Projects() {
               </div>
 
               {/* Backend */}
-              <div className="mt-3 text-sm text-white">
+              <div className="mt-3 text-sm">
                 <p className="font-semibold">Backend:</p>
                 <div className="flex flex-wrap gap-2 mt-1">
                   {activeProject.tech.backend !== "None" ? (
                     activeProject.tech.backend.split(" + ").map((item, idx) => (
                       <span
                         key={idx}
-                        className="px-3 py-1 rounded-full text-sm bg-neutral-800 border border-yellow-400 text-yellow-300 
+                        className="px-3 py-1 rounded-full text-sm bg-gray-100 dark:bg-neutral-800 
+                    border border-yellow-500 text-yellow-600 dark:text-yellow-300 
                     hover:bg-yellow-400 hover:text-black transition-transform transform hover:scale-105"
                       >
                         {item}
                       </span>
                     ))
                   ) : (
-                    <span className="text-gray-400 italic">None</span>
+                    <span className="italic text-gray-400">None</span>
                   )}
                 </div>
               </div>
 
               {/* Deployment */}
-              <div className="mt-3 text-sm text-white">
+              <div className="mt-3 text-sm">
                 <p className="font-semibold">Deployment:</p>
                 <div className="flex flex-wrap gap-2 mt-1">
                   {activeProject.tech.deployment
@@ -183,8 +190,9 @@ function Projects() {
                     .map((item, idx) => (
                       <span
                         key={idx}
-                        className="px-3 py-1 rounded-full text-sm bg-neutral-800 border border-yellow-400 text-yellow-300 
-                hover:bg-yellow-400 hover:text-black transition-transform transform hover:scale-105"
+                        className="px-3 py-1 rounded-full text-sm bg-gray-100 dark:bg-neutral-800 
+                  border border-yellow-500 text-yellow-600 dark:text-yellow-300 
+                  hover:bg-yellow-400 hover:text-black transition-transform transform hover:scale-105"
                       >
                         {item}
                       </span>
@@ -193,14 +201,15 @@ function Projects() {
               </div>
             </div>
 
-            {/* Footer Buttons */}
+            {/* Action Buttons */}
             <div className="flex flex-wrap gap-4 mt-4">
               {activeProject.livePreview !== "Not Avaiable" && (
                 <a
                   href={activeProject.livePreview}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 border border-yellow-400 px-4 py-2 rounded-full hover:bg-yellow-400 hover:text-black transition"
+                  className="flex items-center gap-2 border border-yellow-500 px-4 py-2 rounded-full 
+              hover:bg-yellow-400 hover:text-black transition text-yellow-700 dark:text-yellow-300"
                 >
                   <ExternalLink size={16} />
                   Live Preview
@@ -211,7 +220,8 @@ function Projects() {
                   href={activeProject.gitRepo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 border border-yellow-400 px-4 py-2 rounded-full hover:bg-yellow-400 hover:text-black transition"
+                  className="flex items-center gap-2 border border-yellow-500 px-4 py-2 rounded-full 
+              hover:bg-yellow-400 hover:text-black transition text-yellow-700 dark:text-yellow-300"
                 >
                   <Github size={16} />
                   Source Code

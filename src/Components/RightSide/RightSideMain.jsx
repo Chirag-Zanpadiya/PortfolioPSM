@@ -74,17 +74,17 @@ function RightSideMain() {
   return (
     <div className="flex flex-1 flex-col min-h-screen transition-colors duration-300 
       bg-gradient-to-br from-white via-[#e0f2ff] to-[#ffe4e6] 
-      dark:bg-[#1A1A19] dark:text-[#f5f5f5] text-[#1a202c]">
+      dark:bg-[#1A1A19] dark:text-[#f5f5f5] text-[#1a202c] rounded-xl">
       
       {/* Header */}
       <Header />
 
       {/* Main Content */}
-      <div className="flex-1 overflow-auto p-4 md:p-6 
+      <div className="flex-1 overflow-auto p-4 md:p-6
         bg-white/70 dark:bg-[#1A1A19] 
         backdrop-blur-md text-[#1a202c] dark:text-[#f5f5f5] 
-        rounded-t-2xl shadow-inner border border-[#dbeafe]/60 dark:border-[#27272a] 
-        transition-all duration-300">
+        rounded-t-sm shadow-inner border border-[#dbeafe]/60 dark:border-[#27272a] 
+        transition-all duration-300 ">
         <Outlet />
       </div>
     </div>
