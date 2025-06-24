@@ -59,12 +59,11 @@ function Projects() {
                 hover:shadow-[0_0_20px_#facc15]/30"
             >
               {/* Image */}
-              <div className="h-40 overflow-hidden">
+              <div className="h-40 sm:h-44 overflow-hidden">
                 <img
                   src={arr.bgImg}
                   alt={arr.title}
-                  className="h-full w-full object-cover transition-transform 
-                    duration-300 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
 
@@ -112,7 +111,7 @@ function Projects() {
       {activeProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 px-4">
           <div
-            className="bg-[#1a1a1a] text-white rounded-xl max-w-2xl w-full p-6 relative shadow-2xl border border-yellow-500 
+            className="bg-[#1a1a1a] text-white rounded-xl w-full max-w-2xl p-4 sm:p-6 relative shadow-2xl border border-yellow-500 
                 max-h-[90vh] overflow-y-auto custom-scrollbar"
           >
             <button
@@ -125,8 +124,9 @@ function Projects() {
             <img
               src={activeProject.bgImg}
               alt={activeProject.title}
-              className="rounded-md mb-4 w-full h-64 object-cover"
+              className="rounded-md mb-4 w-full max-h-60 sm:max-h-64 object-cover"
             />
+
             <h2 className="text-2xl font-bold text-yellow-400 mb-2">
               {activeProject.title}
             </h2>
