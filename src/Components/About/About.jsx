@@ -187,7 +187,7 @@ function About() {
               dark:from-yellow-700 dark:to-yellow-600
               transition-colors duration-500"
           >
-            MERN Stack Developer
+            MERN Stack Developer | Software Developer Engineering
           </span>
         </div>
 
