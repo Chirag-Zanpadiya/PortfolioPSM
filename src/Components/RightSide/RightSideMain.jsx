@@ -20,9 +20,7 @@
 
 // // // export default RightSideMain;
 
-
-
-// // // that gpt : 
+// // // that gpt :
 
 // // // import React from "react";
 // // // import Header from "./Header";
@@ -44,9 +42,7 @@
 
 // // // export default RightSideMain;
 
-
-
-// // // new code :: 
+// // // new code ::
 // // import React from "react";
 // // import Header from "./Header";
 // // import { Outlet } from "react-router-dom";
@@ -73,22 +69,22 @@
 
 // function RightSideMain() {
 //   return (
-//     <div className="flex flex-1 flex-col min-h-screen transition-colors duration-300 
-//       bg-gradient-to-br from-white via-[#e0f2ff] to-[#ffe4e6] 
+//     <div className="flex flex-1 flex-col min-h-screen transition-colors duration-300
+//       bg-gradient-to-br from-white via-[#e0f2ff] to-[#ffe4e6]
 //       dark:bg-[#1A1A19] dark:text-[#f5f5f5] text-[#1a202c] rounded-xl">
-      
+
 //       {/* Header */}
 //       <Header />
 
 //       {/* Main Content */}
 //       <div className="flex-1 overflow-auto p-4 md:p-6
-//         bg-white/70 dark:bg-[#1A1A19] 
-//         backdrop-blur-md text-[#1a202c] dark:text-[#f5f5f5] 
-//         rounded-t-sm shadow-inner border border-[#dbeafe]/60 dark:border-[#27272a] 
+//         bg-white/70 dark:bg-[#1A1A19]
+//         backdrop-blur-md text-[#1a202c] dark:text-[#f5f5f5]
+//         rounded-t-sm shadow-inner border border-[#dbeafe]/60 dark:border-[#27272a]
 //         transition-all duration-300 ">
 //         <Outlet />
 //         {/* <ChatBox/> */}
-        
+
 //       </div>
 //     </div>
 //   );
@@ -96,8 +92,7 @@
 
 // export default RightSideMain;
 
-
-import  { useState } from "react";
+import { useState } from "react";
 import Header from "./Header";
 import { Outlet } from "react-router-dom";
 import ChatBox from "../AIChatBot/ChatBox";
@@ -107,19 +102,80 @@ function RightSideMain() {
   const [showChat, setShowChat] = useState(false);
 
   return (
-    <div className="flex flex-1 flex-col min-h-screen transition-colors duration-300 
-      bg-gradient-to-br from-white via-[#e0f2ff] to-[#ffe4e6] 
-      dark:bg-[#1A1A19] dark:text-[#f5f5f5] text-[#1a202c] relative">
-      
+    // <div className="flex flex-1 flex-col min-h-screen transition-colors duration-300
+    //   bg-gradient-to-br from-white via-[#e0f2ff] to-[#ffe4e6]
+    //   dark:bg-[#1A1A19] dark:text-[#f5f5f5] text-[#1a202c] relative">
+
+    //   {/* Header */}
+    //   <Header />
+
+    //   {/* Main Content */}
+    //   <div className="flex-1 overflow-auto p-4 md:p-6
+    //     bg-white/70 dark:bg-[#1A1A19]
+    //     backdrop-blur-md text-[#1a202c] dark:text-[#f5f5f5]
+    //     rounded-t-sm shadow-inner border border-[#dbeafe]/60 dark:border-[#27272a]
+    //     transition-all duration-300">
+    //     <Outlet />
+    //   </div>
+
+    //   {/* Floating Chat Button */}
+    //   {!showChat && (
+    //     <div className="fixed bottom-6 right-6 z-50 flex items-center space-x-2 group">
+    //       {/* Tooltip Text */}
+    //       <div className="bg-black text-gray text-sm px-3 py-1 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-all duration-300">
+    //         How can I help you?
+    //       </div>
+
+    //       {/* Circle Button */}
+    //       <button
+    //         onClick={() => setShowChat(true)}
+    //         className="w-14 h-14 rounded-full dark:bg-[#1A1A19] dark:text-white text-2xl flex items-center justify-center shadow-lg hover:scale-105 transition-all duration-300"
+    //         title="Chat with Assistant"
+    //       >
+    //         💬
+    //       </button>
+    //     </div>
+    //   )}
+
+    //   {/* Fullscreen Chat Box */}
+    //   {showChat && (
+    //     <div className="fixed inset-0 z-50 bg-white dark:bg-[#181818] flex flex-col shadow-2xl transition-all duration-300">
+    //       {/* Header / Close */}
+    //       <div className="flex justify-between items-center px-4 py-3 bg-[#2563eb] text-white">
+    //         <h2 className="text-lg font-semibold">AI Assistant</h2>
+    //         <button
+    //           onClick={() => setShowChat(false)}
+    //           className="text-white text-xl font-bold hover:text-red-200"
+    //         >
+    //           ✕
+    //         </button>
+    //       </div>
+
+    //       {/* Chat Component */}
+    //       <div className="flex-1 overflow-auto p-4 bg-black">
+    //         <UserContext>
+    //         <ChatBox />
+    //         </UserContext>
+    //       </div>
+    //     </div>
+    //   )}
+    // </div>
+    <div
+      className="flex flex-1 flex-col min-h-screen transition-colors duration-300 
+    bg-gradient-to-br from-[#ffffff] via-[#e0f7ff] to-[#ffeef0] 
+    dark:bg-[#1A1A19] dark:text-[#e4e4e7] text-[#1a202c] relative"
+    >
       {/* Header */}
       <Header />
 
       {/* Main Content */}
-      <div className="flex-1 overflow-auto p-4 md:p-6
-        bg-white/70 dark:bg-[#1A1A19] 
-        backdrop-blur-md text-[#1a202c] dark:text-[#f5f5f5] 
-        rounded-t-sm shadow-inner border border-[#dbeafe]/60 dark:border-[#27272a] 
-        transition-all duration-300">
+      <div
+        className="flex-1 overflow-auto p-4 md:p-6
+      bg-white/60 dark:bg-[#262626]
+      backdrop-blur-lg text-[#1a202c] dark:text-[#e4e4e7]
+      rounded-t-md shadow-inner border border-[#dbeafe]/60 dark:border-[#27272a]
+      transition-all duration-300"
+      >
         <Outlet />
       </div>
 
@@ -127,14 +183,14 @@ function RightSideMain() {
       {!showChat && (
         <div className="fixed bottom-6 right-6 z-50 flex items-center space-x-2 group">
           {/* Tooltip Text */}
-          <div className="bg-black text-gray text-sm px-3 py-1 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-all duration-300">
+          <div className="bg-gray-800 text-gray-100 text-sm px-3 py-1 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-all duration-300">
             How can I help you?
           </div>
 
           {/* Circle Button */}
           <button
             onClick={() => setShowChat(true)}
-            className="w-14 h-14 rounded-full dark:bg-[#1A1A19] dark:text-white text-2xl flex items-center justify-center shadow-lg hover:scale-105 transition-all duration-300"
+            className="w-14 h-14 rounded-full bg-[#f1f5f9] dark:bg-[#333333] dark:text-white text-2xl flex items-center justify-center shadow-lg hover:scale-105 transition-all duration-300"
             title="Chat with Assistant"
           >
             💬
@@ -144,7 +200,7 @@ function RightSideMain() {
 
       {/* Fullscreen Chat Box */}
       {showChat && (
-        <div className="fixed inset-0 z-50 bg-white dark:bg-[#181818] flex flex-col shadow-2xl transition-all duration-300">
+        <div className="fixed inset-0 z-50 bg-[#fff8f4] dark:bg-[#1A1A19] flex flex-col shadow-2xl transition-all duration-300">
           {/* Header / Close */}
           <div className="flex justify-between items-center px-4 py-3 bg-[#2563eb] text-white">
             <h2 className="text-lg font-semibold">AI Assistant</h2>
@@ -157,9 +213,9 @@ function RightSideMain() {
           </div>
 
           {/* Chat Component */}
-          <div className="flex-1 overflow-auto p-4 bg-black">
+          <div className="flex-1 overflow-auto p-4 bg-[#ffffff] dark:bg-[#1A1A19] text-[#1a202c] dark:text-[#f5f5f5]">
             <UserContext>
-            <ChatBox />
+              <ChatBox />
             </UserContext>
           </div>
         </div>
