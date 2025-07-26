@@ -278,6 +278,7 @@
 // that gpt code :
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
+import ChatBox from "../AIChatBot/ChatBox";
 
 function LeftSide() {
   const typedRef = useRef(null);
@@ -396,6 +397,8 @@ function LeftSide() {
           </a>
         ))}
       </div>
+
+
     </aside>
   );
 }
