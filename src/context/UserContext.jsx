@@ -77,7 +77,7 @@ const UserContext = ({ children }) => {
       recog.maxAlternatives = 1;
 
       recog.onstart = () => {
-        console.log("🎙️ Voice recognition started");
+        // console.log("🎙️ Voice recognition started");
       };
 
       recog.onresult = (event) => {
