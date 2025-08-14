@@ -5,6 +5,18 @@ import { Link } from "react-router-dom";
 function Projects() {
   const projectDetails = [
     {
+      title: "E-Commerce",
+      desc: "Fast, secure shop.",
+      gitRepo: "https://github.com/Chirag-Zanpadiya/psm_e_commerce",
+      livePreview: "https://psm-e-commerce.vercel.app/",
+      bgImg: "/assets/ecommerce.png",
+      tech: {
+        frontend: "React + TailwindCSS + CSS",
+        backend: "Express.js + Node.js + MongoDB",
+        deployment: "Vercel , Render",
+      },
+    },
+    {
       title: "AutoBGOne",
       desc: "Auto-remove backgrounds from photos in just one click.",
       gitRepo: "https://github.com/Chirag-Zanpadiya/AutoBGOne",
